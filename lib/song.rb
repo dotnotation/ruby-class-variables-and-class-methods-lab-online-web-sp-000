@@ -33,7 +33,8 @@ class Song
   end
   
   def genre_count(genre)
-    hash={}
-    hash << @@genres.histogram
+    #hash={}
+    #hash << @@genres.histogram
+    @@genres[*data.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
   end
 end
