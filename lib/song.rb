@@ -3,6 +3,7 @@ class Song
   
   @@count=0
   @@genres=[]
+  @@artists
   
   attr_accessor :name, :artist, :genre
 
@@ -12,6 +13,7 @@ class Song
     @genre = genre
     @@count += 1
     @@genres << genre
+    @@artists << artist
     #binding.pry
   end
   
@@ -24,5 +26,9 @@ class Song
   
   def self.genres
     @@genres.uniq!
+  end
+  
+  def self.artists
+    @@artists.uniq!
   end
 end
