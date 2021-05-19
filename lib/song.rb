@@ -12,6 +12,9 @@ class Song
     #binding.pry
   end
   
+  def new(name, artist, genre)
+  end
+  
   def self.count
     @@count
   end
