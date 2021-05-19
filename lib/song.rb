@@ -34,6 +34,6 @@ class Song
   
   def .genre_count(genre)
     hash={}
-    
+    hash << @@genres.histogram
   end
 end
