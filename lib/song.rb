@@ -32,7 +32,7 @@ class Song
     @@artists.uniq!
   end
   
-  def .genre_count(genre)
+  def genre_count(genre)
     hash={}
     hash << @@genres.histogram
   end
