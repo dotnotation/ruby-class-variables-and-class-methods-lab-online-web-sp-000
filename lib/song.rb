@@ -17,9 +17,6 @@ class Song
     #binding.pry
   end
   
-  def new(name, artist, genre)
-  end
-  
   def self.count
     @@count
   end
@@ -32,7 +29,7 @@ class Song
     @@artists.uniq!
   end
   
-  def genre_count(genre)
+  def self.genre_count(genre)
     hash= hash.new(0)
     @@genres.each{|genre| hash[genre] +=1}
     hash
