@@ -36,5 +36,6 @@ class Song
     #hash={}
     #hash << @@genres.histogram
     @@genres[*data.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
+    binding.pry
   end
 end
